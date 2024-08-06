@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#plan">Plan Your Trip</a></li>
+                <li><a href="#destinations">Popular Destinations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero" style="background: url('images/hero.jpg') no-repeat center center/cover;">
+        <div class="hero-text">
+            <h2>Your Adventure Awaits</h2>
+            <p>Plan your perfect trip with our easy-to-use travel planner.</p>
+            <a href="#plan" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="plan" class="plan">
+        <h2>Plan Your Trip</h2>
+        <form id="trip-form">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="preferences">Preferences:</label>
+            <textarea id="preferences" name="preferences" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Plan Trip</button>
+        </form>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="https://static.toiimg.com/thumb/msid-53891743,width-748,height-499,resizemode=4,imgsize-152022/.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+            </div>
+            <div class="destination-card">
+                <img src="https://media.istockphoto.com/id/1454217037/photo/statue-of-liberty-and-new-york-city-skyline-with-manhattan-financial-district-world-trade.webp?b=1&s=170667a&w=0&k=20&c=ILAXN43qdlPTT8ljbbT7Hwp95AQJxKTNygWhsQ3qzO4=" alt="New York">
+                <h3>New York, USA</h3>
+            </div>
+            <div class="destination-card">
+                <img src="https://assets.weforum.org/article/image/3njKlgxuIgM1RPriBxovvZa2lsoUiW1fmg5X0bteJo8.jpg" alt="Tokyo">
+                <h3>Tokyo, Japan</h3>
+            </div>
+            <!-- Add more destinations as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
